@@ -157,7 +157,7 @@ class _CachedNetworkSVGImageState extends State<CachedNetworkSVGImage>
   }
 
   void _setToLoadingAfter15MsIfNeeded() => Future.delayed(
-        const Duration(milliseconds: 15),
+        const Duration(milliseconds: 0),
         () {
           if (!_isLoading && _imageFile == null && !_isError) {
             _isLoading = true;
